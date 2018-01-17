@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border: 0;
+    box-sizing: border-box;
+}
+.PhoneBook {
+    width: 1000px;
+    display: flex;
+    background-color: #ffffff;
+    font-family: Tahoma;
+    margin: 50px 0 0 50px;
+}
+.PhoneBook .inputForm {
+    width: 40%;
+    flex-basis: 40%;
+}
+.PhoneBook .inputForm .inpWrap input {
+    width: 100%;
+    box-shadow: none;
+    background-color: #f4f5f9;
+    border: 1px solid #dadfe4;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    height: 35px;
+}
+.PhoneBook .inputForm .inpWrap label {
+    font-size: 14px;
+    padding-bottom: 6px;
+    display: block;
+    color: #0c0c0c;
+}
+.PhoneBook .inputForm .submit {
+    display: flex;
+    justify-content: flex-end;
+}
+.PhoneBook .inputForm .submit input {
+    border-radius: 4px;
+    border: 1px solid #0096fd;
+    display: table;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #0096fd;
+    background-color: #ffffff;
+}
+.PhoneBook .inputForm .submit input:hover {
+    background-color: #0096fd;
+    color: #ffffff;
+}
+.PhoneBook .contactList {
+    width: 60%;
+    flex-basis: 60%;
+    padding-left: 20px;
+}
+.PhoneBook .contactList .list > div:not(.sorting) {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #f4f5f9;
+    border: 1px solid #dadfe4;
+    position: relative;
+}
+.PhoneBook .contactList .list > div:not(.sorting) p {
+    width: 25%;
+    text-align: left;
+}
+.PhoneBook .contactList .list > div:not(.sorting) p:first-child {
+    width: 5%;
+}
+.PhoneBook .contactList .list > div:not(.sorting) p:nth-child(2), .PhoneBook .contactList .list > div:not(.sorting) p:nth-child(3) {
+    width: 15%;
+}
+.PhoneBook .contactList .list > div:not(.sorting) .edit {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 30px;
+}
+.PhoneBook .contactList .list > div:not(.sorting) .remove {
+    cursor: pointer;
+    font-weight: bold;
+    padding-left: 10px;
+    display: none;
+    position: absolute;
+    right: 10px;
+}
+.PhoneBook .contactList .list > div:not(.sorting):hover .edit,
+.PhoneBook .contactList .list > div:not(.sorting):hover .remove {
+    display: block;
+    /*background-color: #000000;
+    color: #ffffff;*/
+}
+.PhoneBook .contactList .list .sorting {
+    display: flex;
+    justify-content: flex-start;
+}
+.PhoneBook .contactList .list .sorting p {
+    width: 25%;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-bottom: 1px solid;
+    font-size: 11px;
+}
+.PhoneBook .contactList .list .sorting p:first-child {
+    width: 5%;
+    border-bottom: 0;
+    cursor: default;
+}
+.PhoneBook .contactList .list .sorting p:nth-child(2), .PhoneBook .contactList .list .sorting p:nth-child(3) {
+    width: 15%;
+}
+.PhoneBook .contactList input.search {
+    width: 100%;
+    box-shadow: none;
+    background-color: #f4f5f9;
+    border: 1px solid #dadfe4;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    height: 40px;
+}
